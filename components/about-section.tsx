@@ -41,7 +41,6 @@ export function AboutSection() {
             </div>
           </motion.div>
 
-          {/* Right Column - Content */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +69,6 @@ export function AboutSection() {
               of their needs.
             </p>
 
-            {/* Values */}
             <div className="space-y-3 mb-8">
               {values.map((value, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -80,7 +78,6 @@ export function AboutSection() {
               ))}
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">

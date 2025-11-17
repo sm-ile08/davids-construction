@@ -30,7 +30,6 @@ export function Footer() {
     <footer className="bg-primary text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Company Info */}
           <div>
             <h3 className="font-serif text-xl font-bold mb-4">
               David's General Construction Works Ltd
@@ -55,7 +54,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -72,7 +70,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm text-white/80">

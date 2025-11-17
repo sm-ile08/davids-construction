@@ -1,48 +1,50 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "./ui/button"
-import { ArrowRight } from "lucide-react"
+import { motion } from "framer-motion";
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function ProjectsSection() {
   const projects = [
     {
-      title: "4-Bedroom Duplex in Lagos",
-      description: "Modern luxury duplex with contemporary design and premium finishes",
-      image: "/modern-4-bedroom-duplex-house-exterior.jpg",
-      location: "Lagos",
+      title: "Bowen University Main Gate",
+      description: "Modern entrance gate design for Bowen University",
+      image: "/daddy2.jpg",
+      location: "Iwo",
     },
     {
-      title: "Commercial Office Complex",
-      description: "Three-story office building with state-of-the-art facilities",
-      image: "/modern-commercial-office-building.jpg",
-      location: "Abuja",
+      title: "Female hostel extension",
+      description: " Expansion of female student accommodation facilities",
+      image: "/daddy3.jpg",
+      location: "Iwo",
     },
     {
-      title: "5-Bedroom Bungalow",
-      description: "Spacious family home with elegant architectural details",
-      image: "/modern-5-bedroom-bungalow-house.jpg",
-      location: "Ibadan",
+      title: "Bbsf cafeteria building",
+      description: "Cafeteria facility for Bowen",
+      image: "/daddy7.jpeg",
+      location: "Iwo",
     },
     {
-      title: "Residential Estate Development",
-      description: "Complete estate with 20 modern housing units",
-      image: "/modern-residential-estate-development.jpg",
+      title: "Bowen University Hospital Extension",
+      description:
+        "Expansion of medical facilities at Bowen University Teaching Hospital",
+      image: "/daddy9.jpeg",
       location: "Port Harcourt",
     },
     {
-      title: "Luxury Villa",
-      description: "High-end villa with swimming pool and landscaped gardens",
-      image: "/luxury-villa-pool.png",
-      location: "Lagos",
+      title: "Inside bbsf cafeteria",
+      description: "Modern cafeteria interior design for Bowen",
+      image: "/daddy10.jpeg",
+      location: "Iwo",
     },
     {
-      title: "Church Building",
-      description: "Modern worship center with capacity for 500 people",
-      image: "/modern-church-building-architecture.jpg",
-      location: "Ogun",
+      title: "Bowen university teaching hospital physiotherapy building",
+      description:
+        "State-of-the-art physiotherapy facility for Bowen University Teaching Hospital",
+      image: "/daddy8.jpeg",
+      location: "Ogbomosho",
     },
-  ]
+  ];
 
   return (
     <section id="projects" className="py-20 md:py-32 bg-muted/30">
@@ -54,12 +56,15 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="text-sm font-semibold text-accent mb-4">OUR PORTFOLIO</div>
+          <div className="text-sm font-semibold text-accent mb-4">
+            OUR PORTFOLIO
+          </div>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             Featured Projects
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Explore our portfolio of completed projects showcasing our commitment to quality and excellence
+            Explore our portfolio of completed projects showcasing our
+            commitment to quality and excellence
           </p>
         </motion.div>
 
@@ -81,18 +86,27 @@ export function ProjectsSection() {
                 />
               </div>
               <div className="p-6">
-                <div className="text-xs font-semibold text-accent mb-2">{project.location}</div>
-                <h3 className="font-serif text-xl font-bold text-foreground mb-2 text-balance">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 text-pretty">{project.description}</p>
-                <Button variant="ghost" className="group/btn p-0 h-auto font-semibold text-primary">
+                <div className="text-xs font-semibold text-accent mb-2">
+                  {project.location}
+                </div>
+                <h3 className="font-serif text-xl font-bold text-foreground mb-2 text-balance">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4 text-pretty">
+                  {project.description}
+                </p>
+                {/* <Button
+                  variant="ghost"
+                  className="group/btn p-0 h-auto font-semibold text-primary"
+                >
                   View Details
                   <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+                </Button> */}
               </div>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
