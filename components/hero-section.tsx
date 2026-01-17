@@ -1,20 +1,23 @@
-"use client"
+"use client";
 
-import { Button } from "./ui/button"
-import { motion } from "framer-motion"
-import { ArrowRight } from "lucide-react"
+import { Button } from "./ui/button";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-accent/70 z-10" />
-        <img src="/modern-construction-site-with-buildings-and-cranes.jpg" alt="Construction background" className="w-full h-full object-cover" />
+        {/* <img src="/modern-construction-site-with-buildings-and-cranes.jpg" alt="Construction background" className="w-full h-full object-cover" /> */}
       </div>
 
       {/* Content */}
@@ -29,8 +32,8 @@ export function HeroSection() {
             We Build Your Dreams Into Reality
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto text-pretty">
-            Trusted building contractors delivering excellence across Nigeria with quality, durability, and affordable
-            solutions.
+            Trusted building contractors delivering excellence across Nigeria
+            with quality, durability, and affordable solutions.
           </p>
           <Button
             size="lg"
@@ -59,5 +62,5 @@ export function HeroSection() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
